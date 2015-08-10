@@ -1,0 +1,169 @@
+/*****************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+      -webkit-transition-duration: .25s; /* Safari */
+     transition-duration: .5s;
+}
+
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.padtop {
+  padding-top: 20px;
+}
+.margtop {
+  margin-top: 20px;
+}
+.floatRight {
+  float: right;
+}
+.lightbulbFun {
+  float: left;
+  padding-right: 20px;
+  padding-top: 2px;
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+html {
+     font-size: 14px !important;
+}
+
+body {
+     color: #000 !important;
+     font-size: 14px !important;
+     line-height: 1.4 !important;
+     font-family: Gotham, Helvetica, Arial, sans-serif !important;
+     margin: 0 !important;
+}
+/*p {
+     margin: 0 !important;
+     line-height: 1.3rem;
+}*/
+h1 {
+  margin: 0 !important;
+  font-size: 3.5rem !important;
+}
+button {
+     border: none;
+}
+
+#getchefhero {
+     background-image: url("../img/herobg-01.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 150px;
+     /*width: 100%;*/
+     color: white;
+     text-align: center;
+     /*margin: 0 auto;*/
+   }
+p span.hero {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.grey {
+  background-color: #ecf0f1;
+  padding: 20px 0px;
+  /*height: 80px;*/
+  color: #3f5364
+}
+.lightbulb {
+  width: 75px;
+}
+button {
+  background-color:#f18b21;
+  color: white !important;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  padding: 10px 15px;
+  margin-top: 10px !important;
+}
+.orangeBox{
+  border: 2px solid #f18b21;
+  border-radius: 5px;
+  padding: 0px 50px 20px 50px;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.dlOption {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.dlOption object{
+  height: 80px;
+  text-align: center;
+  display: block !important;
+  margin: 20px auto !important;
+}
+.console {
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+button:hover{
+  background-color: #FF8200;
+  /*border-radius: 0;*/
+}
+button:focus {
+  outline:0;
+}
+a.repoLink {
+  text-decoration: underline;
+  color: #f18b21;
+}
+
+a.repoLink:hover{
+  color: #FF8200;
+}
+.learnChefCTA {
+  text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .orangeBox h3 {
+    font-size: 1.2rem;
+  }
+  .lightbulbFun {
+    padding-top: 10px;
+  }
+  .console {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 990px) {
+  .console {
+    display: block;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+  .lightbulb {
+    display: none;
+  }
+  .learnChef {
+    text-align: center !important;
+    float: none;
+  }
+  .learnChefCTA {
+    text-align: center;
+  }
+}
